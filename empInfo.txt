@@ -1,0 +1,9 @@
+ 
+ 1. 
+    To get the rows and colums for certain size and blocks.
+ Here n is the full size where a is small box to fill the full size..
+ 
+ rows = (n + a - 1) / a;
+ cols = (m + a - 1) / a;
+
+ rows * cols to get how many blocks we neeed to fill the entire size.
