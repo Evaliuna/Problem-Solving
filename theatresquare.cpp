@@ -1,29 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int n, m, a;
-    cin>> n>>m>>a;
-    int count = 0;
-    if(n>a){
-        for(int i = 0; n>=a; i++){
-            count++;
-       if(m>a){
-            for(int i = 0; m>=a; i++){
-            count++;
-            a += a;
-            count++;
-        }
-    }
-        else count++;
-            
-    }
-    count++;
-        }
-       
-    else count ++;
-    
-    cout<< count;
+int main() {
+    long long n, m, a;
+
+    cin >> n >> m >> a;
+
+    long long rows = (n + a - 1) / a;
+    long long cols = (m + a - 1) / a;
+
+    cout << rows * cols;
 
     return 0;
 }
