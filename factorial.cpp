@@ -13,3 +13,5 @@ int main(){
 
     return 0;
 }
+
+//sadly it can't print more then 20 factorial. we need vecctor to store the digits of the factorial and print it.
