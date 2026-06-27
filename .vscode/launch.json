@@ -2,15 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug C++ file",
+      "name": "Run C++",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
       "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": true,
+      "cwd": "${fileDirname}",
+      "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "gdb.exe",
       "preLaunchTask": "Build C++ file",
