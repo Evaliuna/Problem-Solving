@@ -25,6 +25,10 @@ int main(){
         auto it = m2.find({1, 2}); // finds key {1, 2} in m2, returns iterator to it or m2.end() if not found
         cout<< it->second<<"\n";
 
+        auto it1 = m2.lower_bound({1, 2}); // returns iterator to first key not less than {1, 2}
+        auto it2 = m2.upper_bound({1, 2}); // returns iterator to first key greater than {1, 2}
+        
+
 
     return 0;
 }

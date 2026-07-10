@@ -8,14 +8,14 @@ int main(){
     ms.insert(1);//inserts the element into the multiset {1, 1, 1}
     ms.emplace(3);//emplace is faster than insert because it constructs the object in place {1, 1, 1, 3}
 
-    auto it = ms.find(2);//finds the element in the multiset and returns an iterator to the first occurrence of the element, if the element is not found, it returns an iterator to the end of the multiset
+    auto it = ms.find(1);//finds the element in the multiset and returns an iterator to the first occurrence of the element, if the element is not found, it returns an iterator to the end of the multiset
     if(it != ms.end()){
         cout<<*it<<" ";//prints the first occurrence of the element found in the multiset {2}
     }
 
     ms.erase(2);//erases all occurrences of the element from the multiset {1, 3}
     ms.erase(ms.find(1));//erases the first occurrence of the element pointed by the iterator from the multiset {1, 3}
-    ms.erase(ms.find(1), next(ms.find(1), 2));//erases all occurrences of the elements in the range [first, last) from the multiset {3}
+    ms.erase(ms.find(1), ms.find(3));//erases all occurrences of the elements in the range [first, last) from the multiset {3}
     int cnt = ms.count(3);//counts the number of occurrences of the element in the multiset
     cout<<cnt<<" ";
 
