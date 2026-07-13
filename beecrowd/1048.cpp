@@ -22,5 +22,6 @@ int main(){
     // cout<<hexa<<"\n";
 
     cout<<hex<<uppercase<<v<<"\n";
+    //cout<<dec<<v<<'\n'; it prints into regular deci
     return 0;
 }
