@@ -1,0 +1,16 @@
+# Build folder
+build/
+
+# Executable files
+*.exe
+*.o
+*.out
+
+# IDE and editor files
+.vscode/
+.vs/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
