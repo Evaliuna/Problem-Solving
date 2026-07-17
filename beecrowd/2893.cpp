@@ -17,10 +17,7 @@ int main(){
 
             }
             cout<<fixed<<setprecision(2)<<fastest<<"\n";           
-        }
-     
-  
-      
+        }    
 
     return 0;
 }
