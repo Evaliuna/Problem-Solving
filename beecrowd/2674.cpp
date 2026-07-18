@@ -19,7 +19,9 @@ int main(){
                 prime = false;
                 break;
             }
-            if(prime) {
+       
+        }
+             if(prime) {
             int x = n;
             while(x != 0){
                int digit = x%10;
@@ -30,8 +32,6 @@ int main(){
                  x /= 10;
                }
             }
-        }
-        
         }
         if(super_prime) cout<<"Super\n";
         else if(prime) cout<<"Primo\n";
